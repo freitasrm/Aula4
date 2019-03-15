@@ -1,0 +1,15 @@
+Create Table Recibo
+(
+	Id_Recibo int NOT NULL PRIMARY KEY,
+	Sequencia int,
+	Valor double(16,2),
+	Data datetime,
+	Assinatura image,
+	Referente text,
+	Id_Cidade int,
+	Id_Usuario int,
+	Id_Cliente int,
+	FOREIGN KEY(Id_Cidade) REFERENCES Cidade(Id_Cidade),
+	FOREIGN KEY(Id_Usuario) REFERENCES Usuario(Id_Usuario),
+	FOREIGN KEY(Id_Cliente) REFERENCES Cliente(Id_Cliente)
+);
