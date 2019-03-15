@@ -1,0 +1,6 @@
+Create Table Cidade
+(
+	Id_Cidade int NOT NULL PRIMARY KEY,
+	Nome varchar(255),
+	Sigla char(2)
+);
