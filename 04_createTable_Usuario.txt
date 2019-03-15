@@ -1,0 +1,10 @@
+Create Table Usuario
+(
+	Id_Usuario int NOT NULL PRIMARY KEY,
+	Login varchar(255),
+	Senha varchar(255),
+	Nome varchar(255),
+	CPF int,
+	Id_Endereco int,
+	FOREIGN KEY(Id_Endereco) REFERENCES Endereco(Id_Endereco)
+);
