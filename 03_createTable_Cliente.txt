@@ -1,0 +1,8 @@
+Create Table Cliente
+(
+	Id_Cliente int NOT NULL PRIMARY KEY,
+	Nome varchar(255),
+	CPF int,
+	Id_Endereco int,
+	FOREIGN KEY(Id_Endereco) REFERENCES Endereco(Id_Endereco)
+);
