@@ -1,0 +1,10 @@
+Create Table Endereco
+(
+	Id_Endereco int NOT NULL PRIMARY KEY,
+	Rua varchar(255),
+	Numero int,
+	Complemento varchar(255),
+	CEP int,
+	Id_Cidade int,
+	FOREIGN KEY(Id_Cidade) REFERENCES Cidade(Id_Cidade)
+);
